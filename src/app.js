@@ -4,6 +4,8 @@ let getIssLocation = require('../utils/getIssLocation');
 let hbs =  require('hbs');
 
 let app = express();
+let port = process.env.PORT || 3000
+
 
 let pathToPublic = path.join(__dirname,'../public');
 let viewsPath = path.join(__dirname,'../tamplets/views');
@@ -39,8 +41,8 @@ app.get('/iss',(req,res)=>{
 app.get('*',(req,res)=>{
     res.render('notFound');
 })
-app.listen(3000,()=>{
-    console.log("haa....haaa.... sun rha hu yrrrr 3000 pe!!!!!");
+app.listen(port,()=>{
+    console.log("haa....haaa.... sun rha hu yrrrr "+port+" pe!!!!!");
 })
 
 

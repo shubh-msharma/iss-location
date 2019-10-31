@@ -6,7 +6,7 @@ const latlon = L.marker([0,0]).addTo(mymap)
     .bindPopup('ISS')
     .openPopup();
 
-let url =  "http://localhost:3000/iss"
+let url =  "/iss"
 
 let attribution = "&copy <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
 let tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
